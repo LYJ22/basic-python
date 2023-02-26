@@ -36,3 +36,12 @@ print('a의 번호2: ', a.get('phone2'))
 print('b의 1번: ', b[1])
 print('c의 배열: ', c.get('arr'))
 print('f의 나이와 성적', f.get('Age'), f.get('Grade'))
+
+# 추가
+a['address'] = 'seoul'
+print(a)
+a['rank'] = [1,2,3]
+print(a)
+
+# 길이
+print("a의 길이", len(a))

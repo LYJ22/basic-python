@@ -1,47 +1,24 @@
-#while문 실습
-i = 0
-while i < 3:
-    print("반갑습니다.")
-    i += 1
-print("종료합니다.")
-
-i = 0
-sum = 0
-while i < 10:
-    print(i, end=" ")
-    sum += i
-    i += 1
-print("합계:", sum)
-
-#factorial 출력
-i = 1
-factorial = 1
-while i <= 5:
-    factorial *= i
-    i += 1
-print("5!의 값은 %s입니다." % factorial)
-
-#구구단 3단 출력
-i = 1
-while i < 10:
-    print("3 * %s = %s"%(i, i*3))
-    i += 1
-    
-#1~100 사이 3의 배수만 합한 값 출력
-i = 1
-sum = 0
-
-while i <= 100:
-    if i % 3 == 0:
-        sum += i
-    i += 1
-print("합계:", sum)
-
-#정수 안의 각 자리수 합 계산 (예시: 1234 -> 1+2+3+4)
-num = 1234
-sum = 0
-while num > 0:
-    digit = num % 10
-    sum += digit
-    num = num // 10
-print("합계:",sum)
+# 대문자로 변환
+s  = "comPutEr"
+for x in s:
+    if x.isupper():
+        print(x)
+    else:
+        print(x.upper())
+        
+# dictionary에서 특정 숫자 찾기(ex. 20)
+d = [42, 46, 789, 123, 56, 94, 20, 13, 32, 67, 85]
+for x in d:
+    if x == 20:
+        print("x의 위치는 ", d.index(20))
+        break
+    else:
+        print("not 20")
+        
+# 특정 타입 찾기
+d1 = ['a', 82, 3.14, 'banana', (1,2,3), False]
+for x in d1:
+    if type(x) is float:
+        print(x, "is float")
+    else:
+        print("type:", type(x))

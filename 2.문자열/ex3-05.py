@@ -1,28 +1,16 @@
-#문자열 연결
-first_name = " Gil Dong"
-last_name = "Hong"
-name = last_name + first_name
-print(name)
+#문자열 인덱싱(문자 추출)
+word = "Python"
+print(len(word))
+print(word[0], word[5])
 
-#data type에 따른 계산
-temp = "Person" + str(100)
-print(temp)
+print(word[len(word) - 1])
 
-temp = int("100") + 100
-print(temp)
+#한번 작성된 문자열 변경 불가능
+# word[2] = a  안됨
 
-#문자열 반복
-arrow = "->" * 10
-print(arrow)
+item1 = input("첫번째 단어 입력 : ")
+item2 = input("두번째 단어 입력 : ")
+item3 = input("세번째 단어 입력 : ")
 
-# %s 형식 지정자
-price = 1000
-print("가격 : %s" % "1000")
-print("가격 : %s" % price)
-
-temp = "현재 시간은 %s시 %s분 %s초 입니다."
-print(temp % (22, 24, 18))
-
-#특수 문자와 같이 r 사용 가능
-temp = r"현재 시간은 %s시 %s분 %s초 입니다."
-print(temp)
+word = item1[0] + item2[0] + item3[0]
+print("새로 만든 문자: ", word)

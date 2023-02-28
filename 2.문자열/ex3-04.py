@@ -1,24 +1,28 @@
-#문자열 실습
-welcome = "Happy New Year 2023"
-print(welcome)
+#문자열 연결
+first_name = " Gil Dong"
+last_name = "Hong"
+name = last_name + first_name
+print(name)
 
-#double quotation 출력
-welcome = "\"Happy New Year 2023\""
-print(welcome)
+#data type에 따른 계산
+temp = "Person" + str(100)
+print(temp)
 
-#single quotation 출력
-welcome = "\'Happy New Year 2023\'"
-print(welcome)
+temp = int("100") + 100
+print(temp)
 
-# \n과 \t 의 사용
-message = "c:\temp\name"
-print(message)
+#문자열 반복
+arrow = "->" * 10
+print(arrow)
 
-# \\ \' \" \n \t 등 특수문자가 동작하지 않게 출력
-message = r"c:\temp\name"
-print(message)
+# %s 형식 지정자
+price = 1000
+print("가격 : %s" % "1000")
+print("가격 : %s" % price)
 
-#문자열 길이
-welcome = "세계"
-message = "world"
-print(len(welcome),len(message))
+temp = "현재 시간은 %s시 %s분 %s초 입니다."
+print(temp % (22, 24, 18))
+
+#특수 문자와 같이 r 사용 가능
+temp = r"현재 시간은 %s시 %s분 %s초 입니다."
+print(temp)

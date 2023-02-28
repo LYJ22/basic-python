@@ -1,4 +1,10 @@
-#구구단 출력
+# 구구단 출력1
+for i in range(2,10):
+    for j in range(1, 10):
+        print('{:4d}'.format(i*j), end='')
+    print()
+
+# 구구단 출력2
 num = int(input("출력할 구구단을 입력하세요(2~9): "))
 for x in range(1,10):
     if (num < 2) or (num > 9):
